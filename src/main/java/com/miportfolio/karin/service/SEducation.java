@@ -20,6 +20,7 @@ public class SEducation {
     public List<Education> getEducations() {
         return educRepo.findAll();
     }
+    
     //ya no hay create, sino q modifica lo q hay y si no hay, lo crea
     public void saveEducation(Education educ) {
         educRepo.save(educ);  

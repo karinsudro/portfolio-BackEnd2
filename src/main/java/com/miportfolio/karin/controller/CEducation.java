@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200"}) //xq se cruza con angular, desp se cambia
+@CrossOrigin(origins = "http://localhost:4200") //xq se cruza con angular, desp se cambia
 @RequestMapping("education/") //localhost:8080/education
 public class CEducation {
     
