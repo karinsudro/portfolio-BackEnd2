@@ -65,7 +65,7 @@ public class CPersona {
     }
     
     //Login
-    @PostMapping ("login")
+    @PostMapping ("auth/login")   //puse auth
     @ResponseBody
     public PersonaDto loginPersona(@RequestBody Persona perso) {
         return persoServ.loginPersona(perso.getEmail(), perso.getClave());

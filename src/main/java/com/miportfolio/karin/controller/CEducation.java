@@ -41,7 +41,7 @@ public class CEducation {
     
     //@RequestBody es para recibir un estudio nuevo. Viene en un JSON
     @PostMapping("new")
-    @ResponseBody
+    //@ResponseBody
     public String saveEducation(@RequestBody Education educ){
         educServ.saveEducation(educ);
         return "El estudio fue creado correctamente";

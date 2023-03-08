@@ -20,14 +20,15 @@ public class SRed {
     public List<Red> getRedes() {
         return redRepo.findAll();
     }
-    //ya no hay create, sino q modifica lo q hay y si no hay, lo crea
-    public void saveRed(Red redes) {
-        redRepo.save(redes);  
-    }
 
     //si no encuentra la red retorna null
     public Red findRed(Integer id) {
         return redRepo.findById(id).orElse(null);   
+    }
+    
+    //ya no hay create, sino q modifica lo q hay y si no hay, lo crea
+    public void saveRed(Red redes) {
+        redRepo.save(redes);  
     }
     
     //mismo que create
