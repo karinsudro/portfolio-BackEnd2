@@ -17,7 +17,7 @@ public class Project {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     //@Column(name="id_proj")
-    private int id;   
+    int id;   
     
     //@NotNull
     @Column(name="imagen")
@@ -42,8 +42,7 @@ public class Project {
     public Project() {
     }
 
-    public Project(int id, String imagen, String proyecto, String descripcion, String live_url, String repo_url) {
-        this.id = id;
+    public Project(String imagen, String proyecto, String descripcion, String live_url, String repo_url) {
         this.imagen = imagen;
         this.proyecto = proyecto;
         this.descripcion = descripcion;

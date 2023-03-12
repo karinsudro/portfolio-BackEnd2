@@ -16,7 +16,7 @@ public class About {
     
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int id;
+    int id;
     
     //@NotNull
     @Column(name="foto")
@@ -48,8 +48,7 @@ public class About {
     public About() {
     }
 
-    public About(int id, String foto, String saludoA, String saludoB, String saludoC, String saludoD, String saludoE, String saludoF, String saludoG) {
-        this.id = id;
+    public About(String foto, String saludoA, String saludoB, String saludoC, String saludoD, String saludoE, String saludoF, String saludoG) {
         this.foto = foto;
         this.saludoA = saludoA;
         this.saludoB = saludoB;

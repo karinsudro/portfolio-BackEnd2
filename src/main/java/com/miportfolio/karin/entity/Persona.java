@@ -18,7 +18,7 @@ public class Persona {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     //@Column(name="id")
-    private int id;   
+    int id;   
     
     //@NotNull
     //@Size(min=1, max=45, message="No cumple con la longitud")

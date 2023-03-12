@@ -17,7 +17,7 @@ public class ExpeTeaching {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     //@Column(name="id_exp")
-    private int id;  
+    int id;  
     
     //@Column(name="expe_tipo")
     //private String expe_tipo;
@@ -48,8 +48,7 @@ public class ExpeTeaching {
     public ExpeTeaching() {
     }
 
-    public ExpeTeaching(int id, String cargo, String inicio, String fin, String lugar, String descripcion) {
-        this.id = id;
+    public ExpeTeaching(String cargo, String inicio, String fin, String lugar, String descripcion) {
         this.cargo = cargo;
         this.inicio = inicio;
         this.fin = fin;

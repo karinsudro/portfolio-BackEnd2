@@ -17,7 +17,7 @@ public class Education {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     //@Column(name="id_educ")
-    private int id;   
+    int id;   
     
     //@NotNull
     @Column(name="carrera")
@@ -44,8 +44,7 @@ public class Education {
     public Education() {
     }
 
-    public Education(int id, String carrera, String inicio, String fin, String institucion, String descripcion) {
-        this.id = id;
+    public Education(String carrera, String inicio, String fin, String institucion, String descripcion) {
         this.carrera = carrera;
         this.inicio = inicio;
         this.fin = fin;

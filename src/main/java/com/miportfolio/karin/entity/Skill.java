@@ -19,7 +19,7 @@ public class Skill{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     //@Column(name="id_skill")
-    private int id;   
+    int id;   
     
     @Column(name="skill_tipo")
     private String skill_tipo;  
@@ -49,8 +49,7 @@ public class Skill{
     public Skill() {
     }
 
-    public Skill(int id, String skill_tipo, String skill, String icono, int progreso, String color) {
-        this.id = id;
+    public Skill(String skill_tipo, String skill, String icono, int progreso, String color) {
         this.skill_tipo = skill_tipo;
         this.skill = skill;
         this.icono = icono;

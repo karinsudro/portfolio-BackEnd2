@@ -4,6 +4,7 @@ import com.miportfolio.karin.entity.Red;
 import com.miportfolio.karin.service.SRed;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -45,9 +46,10 @@ public class CRed {
     public String saveRed(@RequestBody Red redes){
         redServ.saveRed(redes);
         return "La red fue creada correctamente";
-        //return ResponseEntity.ok().body(redes);
+            //return ResponseEntity.ok().body(redes);
     
     }
+    
     
     //para editar
     @PutMapping("update/{id}")   
