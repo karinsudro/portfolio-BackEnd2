@@ -19,7 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 //@CrossOrigin(origins="*", allowedHeaders="*")
 @RestController
-@CrossOrigin(origins = "http://localhost:4200") //xq se cruza con angular, desp se cambia por firebase
+@CrossOrigin(origins = "https://portfolio-karinsd.web.app/")
+//@CrossOrigin(origins = "http://localhost:4200") //xq se cruza con angular, desp se cambia por firebase
 @RequestMapping("persona/") //localhost:8080/persona y cdo se sube se saca
 public class CPersona {
     
