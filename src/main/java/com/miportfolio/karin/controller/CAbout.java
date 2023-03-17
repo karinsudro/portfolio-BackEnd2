@@ -48,7 +48,6 @@ public class CAbout {
         aboutServ.saveAbout(aboutme);
         return "Los datos fueron creados correctamente";
         //return ResponseEntity.ok().body(pers);
-    
     }
     
     //para editar
@@ -65,5 +64,6 @@ public class CAbout {
         return "Los datos fueron borrados correctamente";
         //return new ResponseEntity(HttpStatus.OK);
     }
+    
     
 }
