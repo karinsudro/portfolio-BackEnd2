@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200") //xq se cruza con angular, desp se cambia
+@CrossOrigin(origins = "https://portfolio-karinsd.web.app/")
+//@CrossOrigin(origins = "http://localhost:4200") //xq se cruza con angular, desp se cambia por firebase
 @RequestMapping("red/") //localhost:8080/red
 public class CRed {
     
