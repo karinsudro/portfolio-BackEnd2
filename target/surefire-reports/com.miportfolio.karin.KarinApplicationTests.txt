@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.miportfolio.karin.KarinApplicationTests
 -------------------------------------------------------------------------------
-<<<<<<< HEAD
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.511 s - in com.miportfolio.karin.KarinApplicationTests
-=======
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.166 s - in com.miportfolio.karin.KarinApplicationTests
->>>>>>> 3b72263ccfe97bd336ae397f82af8477d2ecd248
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.345 s - in com.miportfolio.karin.KarinApplicationTests
