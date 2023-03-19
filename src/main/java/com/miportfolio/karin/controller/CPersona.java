@@ -65,8 +65,8 @@ public class CPersona {
         return "La persona fue borrada correctamente";
     }
     
-    //Login
-    @PostMapping ("auth/login")   //puse auth
+    //Login. en local fciona bien
+    @PostMapping ("login")   //saco auth. error POST en deploy
     @ResponseBody
     public PersonaDto loginPersona(@RequestBody Persona perso) {
         return persoServ.loginPersona(perso.getEmail(), perso.getClave());
