@@ -66,7 +66,7 @@ public class CPersona {
     }
     
     //Login. en local fciona bien
-    @PostMapping ("login")   //saco auth. error POST en deploy
+    @PostMapping ("auth/login")   
     @ResponseBody
     public PersonaDto loginPersona(@RequestBody Persona perso) {
         return persoServ.loginPersona(perso.getEmail(), perso.getClave());
