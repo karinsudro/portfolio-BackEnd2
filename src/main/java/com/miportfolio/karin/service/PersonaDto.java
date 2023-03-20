@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter @Setter
 public class PersonaDto {
     
-    private int id;   
+    int id;   
     
     private String hola;
     
