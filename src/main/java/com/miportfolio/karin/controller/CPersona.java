@@ -66,7 +66,7 @@ public class CPersona {
     }
     
     //Login. en local fciona bien
-    @PostMapping ("login") //estaba ("auth/login")
+    @PostMapping ("auth/login")
     @ResponseBody
     public PersonaDto login(@RequestBody Persona perso) {
         return persoServ.login(perso.getEmail(), perso.getClave());
