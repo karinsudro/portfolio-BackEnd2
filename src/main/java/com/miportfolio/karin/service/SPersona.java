@@ -48,7 +48,7 @@ public class SPersona {
     //}
     
     //login con dto
-    public PersonaDto loginPersona(String email, String clave){
+    public PersonaDto login(String email, String clave){
 	Persona persona = persoRepo.findByEmailAndClave(email, clave);
 	PersonaDto personaDto = new PersonaDto(persona.getId(), persona.getHola(), persona.getNombre(), persona.getApellido(),persona.getCargo());
 	return personaDto;
