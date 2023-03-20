@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RPersona extends JpaRepository<Persona, Integer>{
-    //login
-    //public List <Persona> findByEmailAndClave(String email, String clave);
+
     public Persona findByEmailAndClave(String email, String clave);
 }

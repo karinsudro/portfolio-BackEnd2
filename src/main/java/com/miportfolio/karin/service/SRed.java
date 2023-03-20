@@ -28,7 +28,7 @@ public class SRed {
     
     //ya no hay create, sino q modifica lo q hay y si no hay, lo crea
     public void saveRed(Red redes) {
-        redRepo.save(redes);    //linea que POSTMAN marca como error java
+        redRepo.save(redes);
     }
     
     //mismo que create
