@@ -37,6 +37,16 @@ public class SPersona {
     public void deletePersona(Integer id) {
         persoRepo.deleteById(id);
     }
+
+    //login con dto
+    public PersonaDto login(String email, String clave){
+	Persona persona = persoRepo.findByEmailAndClave(email, clave);
+	PersonaDto personaDto = new PersonaDto(persona.getId(), persona.getHola(), persona.getNombre(), persona.getApellido(),persona.getCargo());
+	return personaDto;
+    }
+    
+}
+
     
    //Login
     //public Persona loginPersona(String email, String clave) {
@@ -47,11 +57,3 @@ public class SPersona {
     //    return null;
     //}
     
-    //login con dto
-    public PersonaDto login(String email, String clave){
-	Persona persona = persoRepo.findByEmailAndClave(email, clave);
-	PersonaDto personaDto = new PersonaDto(persona.getId(), persona.getHola(), persona.getNombre(), persona.getApellido(),persona.getCargo());
-	return personaDto;
-    }
-    
-}
