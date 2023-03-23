@@ -46,6 +46,6 @@ Para ver el backend en **Render**, [**clickeá acá**.](https://portfolio-backen
 
 Agradecimientos
 ---
-A **todos mis afectos**, desde el momento que empecé a transitar este nuevo mundo.
+A **todos mis afectos**, muchas gracias.
 
 A **"ProgramaTK"**, un grupo de estudiantes -***comunidad increíble de gente***- del programa, con la idea de aprender, entender el material y llegar todos a la meta. Somos todos maestros y alumnos ;)
